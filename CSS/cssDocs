@@ -1,0 +1,26 @@
+## Flexbox
+
+Flexbox is a layout model that allows elements to align and distribute space within a container. It is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. 
+
+**Cheatsheet** https://flexbox.malven.co/
+
+### These were written on May 2024, so the syntax might have changed.
+
+```css
+.container {
+  display: flex;
+  flex-direction: row/column;
+  flex-wrap: nowrap/wrap/wrap-reverse;
+}
+```
+
+```css
+.item {
+  flex-grow: 0; //if the container is larger than the items, the items will grow
+  flex-shrink: 1; //if the container is smaller than the items, the items will shrink
+  flex-basis: auto;
+  //They can be combined into the flex property as follows:
+
+  flex: 0 1 auto;
+}
+```
